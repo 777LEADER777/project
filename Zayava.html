@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="starter.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h2 id="zayava">Оставить заявку</h2>
+        <div class="order-wrapper">
+            <div class="order-form">
+                <label for="firstname_field">Имя</label>
+                <input type="text" id="firstname_field">
+                <label for="lastname_field">Фамилия</label>
+                <input type="text" id="lastname_field">
+                <label for="phone_field">Телефон</label>
+                <input type="text" id="phone_field">
+                <button id="otp">Отправить</button>
+            </div>
+            <div class="order-alert visible">
+                <p>
+                    <strong>Уважаемый,<span id="lastname"> Иванов </span><span id="name">Н.</span></strong><br>
+                    Наши специалисты уже получили Вашу заявку и свяжутся с Вами в ближайшее время по телефону
+                    <strong>
+                        <nobr id="nobr">8 999 123 45 67</nobr>
+                    </strong><br>
+                    Спасибо за обращение!
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        let otp = document.querySelector("#otp")
+        let nobr = document.querySelector("#nobr")
+        let phone = document.querySelector("#phone_field")
+        let fname = document.querySelector("#firstname_field")
+        let lname = document.querySelector("#lastname_field")
+        let lastname = document.querySelector("#lastname")
+        let firstname = document.querySelector("#name")
+        let za = document.querySelector(".visible")
+        otp.addEventListener('click', function () {
+            nobr.innerText = phone.value;
+            lastname.innerText = " " + lname.value + " ";
+            firstname.innerText = fname.value[0] + ".";
+            za.style.opacity = 1
+        })
+    </script>
+</body>
+
+</html>
+let orders{
+phone: phone.value,
+lname: lname.value,
+fname:fname.value
+}

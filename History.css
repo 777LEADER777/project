@@ -1,0 +1,195 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+header {
+    background-color: rgb(199, 36, 36);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    background-attachment: fixed;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    background-image: url(Images/LogoFerrari.png);
+    background-size: cover;
+    top: 0px;
+    position: relative;
+}
+.text {
+    width: 350px;
+    height: 100px;
+    background-image: url(Images/TxtFerrari.png);
+    background-size: cover;
+    top: 50px;
+    position: relative;    
+}
+.menu {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    font-size: 50px;
+}
+nav {
+   position: relative;
+}
+.prlx1 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(Images/Enzo\ Ferrari.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 50px;
+}
+.fact1 {
+    width: 100%;
+    height: 325px;
+    background-color: rgb(199, 36, 36);
+    border: 5px rgb(41, 41, 41) solid;
+    text-align: center;
+    color: white;
+}
+.prlx2 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(Images/SmallRaceFerrari.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fact2 {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(199, 36, 36);
+    border: 5px rgb(41, 41, 41) solid;
+    text-align: center;
+    color: white;
+}
+.prlx3 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(Images/BigRaceFerrari.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fact3 {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(199, 36, 36);
+    border: 5px rgb(41, 41, 41) solid;
+    text-align: center;
+    color: white;
+}
+.prlx4 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(Images/FerrariFamily.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fact4 {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(199, 36, 36);
+    border: 5px rgb(41, 41, 41) solid;
+    text-align: center;
+    color: white;
+}
+.facebook {
+    background-image: url(Images/facebook.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.youtube {
+    background-image: url(Images/youtube.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.whatsapp {
+    background-image: url(Images/whatsapp.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.snapchat {
+    background-image: url(Images/snapchat.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+footer {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+}
+.facebook:hover {
+    background-color: #2b5297;
+    border-radius: 100%;
+    transition: all 2s;
+}
+.youtube:hover {
+    background-color: #c30000;
+    border-radius: 100%;
+    transition: all 2s;
+}
+.whatsapp:hover {
+    background-color: #26a614;
+    border-radius: 100%;
+    transition: all 2s;
+}
+.snapchat:hover {
+    background-color: #fdfd03;
+    border-radius: 100%;
+    transition: all 2s;
+}
+h1 {
+    font-family: fantasy;
+}
+p {
+    font-family: Arial;
+}
+a {
+    color: yellowgreen;
+}
+a:hover {
+    color: yellow;
+    text-shadow: 1px 1px grey;
+}
+li:hover {
+    text-shadow: 5px 5px grey;
+}
+.none {
+    text-align: left;
+}
+@media screen and (max-width:468px) {
+    header {height: auto;}
+    .menu{font-size: 25px;}
+    .text{background-image: none; width: 0; height: 0;}
+    .prlx1{background-size: contain; height: 300px; background-position-y: 200px;}
+    .fact1 {height: auto;}
+    .prlx2{background-size: contain; height: 300px;}
+    .fact2 {height: auto;}
+    .prlx3{background-size: contain; height: 300px;}
+    .fact3 {height: auto;}
+}
+@media screen and (max-width:768px) {
+    header {height: auto;}
+    .menu{font-size: 25px;}
+    .text{background-image: none; width: 0; height: 0;}
+    .prlx1{background-size: contain; height: 300px; background-position-y: 200px;}
+    .fact1 {height: auto;}
+    .prlx2{background-size: contain; height: 300px;}
+    .fact2 {height: auto;}
+    .prlx3{background-size: contain; height: 300px;}
+    .fact3 {height: auto;}
+}
